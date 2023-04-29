@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        
+        <div class="app">
+            <div class="screen join-screen active">
+                <div class="form">
+                    <h2>Join Chatroom</h2>
+                    <div class="form-input">
+                        <label>Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-input">
+                        <button id="join-user">Join</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="screen chat-screen">
+                <div class="header">
+                    <div class="logo">Chatroom</div>
+                    <button id="exit-chat">Exit</button>
+                </div>
+                <div class="messages">    
+                                  <!--  test chat -->
+                    <!-- <div class="message my-message">
+                        <div>
+                            <div class="name">test1</div>
+                            <div class="text">Hi</div>
+                        </div>   
+                    </div>
+                    <div class="update">
+                        test2 joined the conversation
+                    </div>
+                    <div class="message other-message">
+                        <div>
+                            <div class="name">test2</div>
+                            <div class="text">Hi</div>
+                        </div>    
+                    </div> -->
+                </div>
+                <div class="typebox">
+                    <input type="text" class="text" id="message-input">
+                    <button id="send-message">Send</button>
+                </div> 
+            </div>
+
+        </div>
+        
+        <script type="text/javascript" src="socket.io/socket.io.js" async defer></script>
+        <script type="text/javascript" src="code.js"></script>
+    </body>
+</html>
